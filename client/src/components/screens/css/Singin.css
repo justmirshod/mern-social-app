@@ -1,0 +1,216 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+section {
+  position: relative;
+  min-height: 90vh;
+  background: #263238;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+.auth_container {
+  position: relative;
+  width: 800px;
+  height: 500px;
+  background: #fff;
+  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+.auth_container .user {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+.auth_container .user .imgBx {
+  position: relative;
+  width: 50%;
+  height: 100%;
+  background: #ff0;
+  transition: 0.5s;
+}
+.auth_container .user .imgBx img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.auth_container .user .formBx {
+  position: relative;
+  width: 50%;
+  height: 100%;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  transition: 0.5s;
+}
+.auth_container .user .formBx .form h2 {
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-align: center;
+  width: 100%;
+  margin-bottom: 10px;
+  color: #555;
+}
+.auth_container .user .formBx .form input {
+  position: relative;
+  width: 100%;
+  padding: 10px;
+  background: #f5f5f5;
+  color: #333;
+  border: none;
+  outline: none;
+  box-shadow: none;
+  margin: 8px 0;
+  font-size: 14px;
+  letter-spacing: 1px;
+  font-weight: 300;
+}
+.auth_container .user .formBx .form input[type="submit"] {
+  max-width: 100px;
+  background: #677eff;
+  color: #fff;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  transition: 0.5s;
+}
+.auth_container .user .formBx .form .signup {
+  position: relative;
+  margin-top: 20px;
+  font-size: 12px;
+  letter-spacing: 1px;
+  color: #000000;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+.auth_container .user .formBx .form .signup a {
+  font-weight: 600;
+  text-decoration: none;
+  color: #000000;
+}
+.auth_container .signupBx {
+  pointer-events: none;
+}
+.active .signupBx {
+  pointer-events: initial;
+}
+
+.auth_container .signupBx .formBx {
+  left: 100%;
+}
+.active .signupBx .formBx {
+  left: 0;
+}
+.auth_container .signupBx .imgBx {
+  left: -100%;
+}
+.active .signupBx .imgBx {
+  left: 0;
+}
+
+.auth_container .signinBx .formBx {
+  left: 0;
+}
+.active .signinBx .formBx {
+  left: 100%;
+}
+.auth_container .signinBx .imgBx {
+  left: 0;
+}
+.active .signinBx .imgBx {
+  left: -100%;
+}
+
+.containers {
+  position: relative;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.images {
+  opacity: 1;
+  display: block;
+  width: 80px;
+  height: auto;
+  transition: 0.5s ease;
+  backface-visibility: hidden;
+  border-radius: 100%;
+  margin: 0 auto;
+}
+
+.middles {
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 48%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.containers:hover .images {
+  opacity: 0.3;
+}
+
+.containers:hover .middles {
+  opacity: 0.8;
+}
+
+.texts {
+  background-color: #fff;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+
+.modals {
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.596);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.modals .modal-content {
+  padding: 10px;
+  width: 40%;
+  min-width: 420px;
+  margin: 5rem auto;
+  background-color: #fff;
+}
+
+.modals .modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media (max-width: 991px) {
+  section .auth_container {
+    max-width: 400px;
+  }
+  section .auth_container .imgBx {
+    display: none;
+  }
+  section .auth_container .user .formBx {
+    width: 100%;
+  }
+}

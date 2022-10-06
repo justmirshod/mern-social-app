@@ -1,0 +1,35 @@
+.navbar {
+  width: 100%;
+  height: 10vh;
+  background-color: #455a64;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+.navigationBar {
+  width: 90%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.navigationBar .mainPage a {
+  color: white;
+}
+
+.navLink ul li {
+  display: inline-block;
+}
+
+.navLink ul li a {
+  padding: 0 10px;
+  color: #fff;
+}
+
+.mainPage {
+  color: white;
+  font-family: "Grand Hotel", cursive;
+  font-size: 24px;
+}

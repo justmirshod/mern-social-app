@@ -1,0 +1,34 @@
+.home {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #263238;
+}
+
+.post__items {
+  display: grid;
+  grid-template-columns: 70% 30%;
+  /* gap: 20px; */
+}
+
+.left__side {
+  min-height: 90vh;
+  padding: 20px 20%;
+}
+
+.right__side {
+  min-height: 90vh;
+  padding: 20px 20%;
+}
+
+.postedBy {
+  padding: 10px;
+}
+
+.card-content h4 {
+  margin: 0;
+}
+
+.card-content img {
+  width: 24px;
+  height: 24px;
+}
